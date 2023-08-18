@@ -55,7 +55,8 @@ mongoose.connect(url, { useNewUrlParser: true }).then(() => {
     console.log('Conexión con la BD Atlas realizada con éxito!!!');
 
     app.listen(port, () => {
-        console.log('servidor ejecutándose en http://localhost:' + port);
+        //console.log('servidor ejecutándose en http://localhost:' + port);
+        console.log('servidor ejecutándose para proyecto SubirImagen');
     });
 
 });
