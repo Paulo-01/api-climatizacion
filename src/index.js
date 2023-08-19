@@ -26,8 +26,9 @@ app.use(fileUpload({
 const port = process.env.PORT || 3000;
 
 //Esta conexion es para MongoDB Atlas Data|Cloud
-//const url = "mongodb+srv://<user>:<password>@cluster0.ql625.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-const url = "mongodb+srv://pcca24:8sH8kFdxf1XKX8ze@cluster0.vnqhjif.mongodb.net/"
+const url = "mongodb+srv://pcca24:8sH8kFdxf1XKX8ze@cluster0.vnqhjif.mongodb.net/test?retryWrites=true&w=majority"
+//const url = "mongodb://atlas-sql-64de387613055d5cca12facb-9quw3.a.query.mongodb.net/test?ssl=true&authSource=admin"
+
 
 //confugurar cors; y se crea un middleware con "cors()"
 app.use(cors());
