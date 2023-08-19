@@ -23,6 +23,8 @@ app.use(fileUpload({
 //Conectar a la Base de Datos - Conexion Local de MongoDB
 //conexion();
 
+//valida primero que si un proveedor hosting o de la nube le da un puerto (process.env.PORT)
+//o de lo contrario utiliza el puerto 3000
 const port = process.env.PORT || 3000;
 
 //Esta conexion es para MongoDB Atlas Data|Cloud
