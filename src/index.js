@@ -1,7 +1,3 @@
-
-//Definir protocolo http
-var http = require('http');
-
 //Definir las dependencias
 //Se configura MongoDB de forma Local
 //const { conexion } = require("../basedatos/conexion");  //es la importacion del archivo /basedatos/conexion.js
@@ -62,9 +58,8 @@ mongoose.connect(url, { useNewUrlParser: true }).then(() => {
 
     app.listen(port, () => {
         //console.log('servidor ejecutándose en http://localhost:' + port);
-        console.log('servidor ejecutándose para proyecto SubirImagen ') + port;
+        console.log('Servidor en Puerto: ' + port);
     });
-
 });
 
 //PASO 2 POST method route -----------------------------------------------
